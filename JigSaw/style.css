@@ -10,8 +10,8 @@ body{
 
 #grid1-1{
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: -1px;
+    top: -1px;
 }
 
 #img1-1-draggable {
@@ -132,3 +132,15 @@ body{
     right: -5px;
     /*transform: scale(0.5)*/
 }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: -1px;
+    }
+    .puzzle-grid-drop {
+      width: -10px;
+      height: -10px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+    }
