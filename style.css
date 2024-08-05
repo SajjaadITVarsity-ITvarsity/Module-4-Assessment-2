@@ -26,16 +26,16 @@ body {
     background-color: #f0f0f0;
 }
 
+.draggable-images img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
 .draggable-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-.draggable-images img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
 }
