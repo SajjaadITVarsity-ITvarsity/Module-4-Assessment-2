@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -6,141 +6,36 @@ body{
     background-color: deepskyblue;
 }
 
-/*========== grid1-1 ==========*/
-
-#grid1-1{
-    position: absolute;
-    left: -1px;
-    top: -1px;
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#img1-1-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: -1px;
 }
 
-
-/*========== grid1-2 ==========*/
-
-#grid1-2{
-    position: absolute;
-    left: 200px;
-    top: 0px;
+.puzzle-grid-drop {
+    width: 95px;
+    height: 95px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
 }
 
-#img1-2-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
+.draggable-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-/*========== grid1-3 ==========*/
-
-#grid1-3{
-    position: absolute;
-    left: 400px;
-    top: 0px;
+.draggable-images img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
-
-#img1-3-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
-}
-
-/*========== grid2-1 ==========*/
-
-#grid2-1{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-#img2-1-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
-}
-
-/*========== grid2-2 ==========*/
-
-#grid2-2{
-    position: absolute;
-    left: 200px;
-    top: 0px;
-}
-
-#img2-2-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
-}
-
-/*========== grid2-3 ==========*/
-
-#grid2-3{
-    position: absolute;
-    left: 400px;
-    top: 0px;
-}
-
-#img2-3-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
-}
-
-/*========== grid3-1 ==========*/
-
-#grid3-1{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-#img3-1-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
-}
-
-/*========== grid3-2 ==========*/
-
-#grid3-2{
-    position: absolute;
-    left: 200px;
-    top: 0px;
-}
-
-#img3-2-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
-}
-
-/*========== grid3-3 ==========*/
-
-#grid3-3{
-    position: absolute;
-    left: 400px;
-    top: 0px;
-}
-
-#img3-3-draggable {
-    position: absolute;
-    right: -5px;
-    /*transform: scale(0.5)*/
-}
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: -1px;
-    }
-    .puzzle-grid-drop {
-      width: -10px;
-      height: -10px;
-      border: 1px solid #ccc;
-      background-color: #f0f0f0;
-    }
